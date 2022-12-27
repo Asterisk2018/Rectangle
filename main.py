@@ -8,6 +8,10 @@ class Rectangle:
     def __str__(self):
         return f'Rectangle : {self.x}, {self.y}, {self.width}, {self.heigth}.'
 
+    def get_area(self):
+        return self.width * self.heigth
 
-r1 = Rectangle(5, 10, 50, 100)
-print(r1)
+
+rect_1 = Rectangle(5, 10, 50, 100)
+print(rect_1)
+print(rect_1.get_area())
